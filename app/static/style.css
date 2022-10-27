@@ -103,11 +103,14 @@ a.btn{
 
 .content{
     width: 1200px;
+    overflow: hidden;
 }
 
 .row{
     display: flex;
     flex-direction: row;
+    float: left;
+    
 }
 
 .orange{
@@ -121,6 +124,7 @@ a.btn{
 .vert-pad{
     padding: 20px 0;
 }
+
 .card{
     background-color: #fff;
     box-shadow: 0 1px 2px #ddd;
@@ -130,7 +134,51 @@ a.btn{
 }
 
 .third{
-    width: 360px;
-    margin: 20px;
+    width: 300px;
+    margin: 15px;
 }
 
+.contact-form input{
+    font-family: 'Rubik' sans-serif;
+    border: none;
+    height: 30px;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+}
+
+
+.full-width{
+    width: 100%;
+}
+
+.footer{
+    padding: 80px 0 0 0  ;
+    background-color: #333;
+    color: #fff;
+}
+
+.social-links{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.social-links a{
+    margin:0 10px;
+}
+
+.social{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.made-with{
+    padding: 0 30px;
+    color: #555;
+}
+
+.white-bg{
+    background-color: #fff;
+}
