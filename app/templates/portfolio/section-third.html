@@ -3,14 +3,15 @@
         <div class="row vert-pad">
             <div class="left padded">
                 <h1>Ahora o nunca! trabajemos juntos :)</h1>
-                <p></p>
+                <p>Dare mi mejor esfuerzo! para aprender, aportar valor y que tengamos una fructífera relación a largo plazo. </p>
             </div>
             <div id="contacto" class="right padded">
-                <form class="contact-form" method="post" action="{{ url_for('portfolio.mail') }}"></form>
+                <form class="contact-form" method="post" action="{{ url_for('portfolio.mail') }}">
                     <input name="name" placeholder="Nombre" required />
                     <input name="email" placeholder="correo" required type="email" />
                     <textarea placeholder="Mensaje" name="message" required minlength="10"></textarea>
-                    <button class="btn">Enviar</button>
+                    <button class="btn full-width">Enviar</button>
+                </form>    
             </div>
         </div>
     </div>

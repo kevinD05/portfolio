@@ -148,13 +148,22 @@ a.btn{
     width: calc(100% - 20px);
 }
 
+.contact-form textarea{
+    font-family: 'Rubik',sans-serif;
+    border: none;
+    height: 100px;
+    padding: 15px 10px;
+    resize: none;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+}
 
 .full-width{
     width: 100%;
 }
 
 .footer{
-    padding: 80px 0 0 0  ;
+    padding: auto;
     background-color: #333;
     color: #fff;
 }
@@ -176,7 +185,7 @@ a.btn{
 
 .made-with{
     padding: 0 30px;
-    color: #555;
+    color: #ddd;
 }
 
 .white-bg{
