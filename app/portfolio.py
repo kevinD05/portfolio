@@ -11,7 +11,7 @@ bp = Blueprint('portfolio',__name__, url_prefix='/')
 def index():
     return render_template('portfolio/index.html')
 
-@bp.route('/mail', methods=['POST'])
+@bp.route('/mail', methods=['GET','POST'])
 def mail():
     name = request.form.get('name')
     email = request.form.get('email')
@@ -22,10 +22,10 @@ def mail():
         return render_template('portfolio/sent_mail.html')
 
 
-    return render_template('portfolio/sent_mail.html')
+    return redirect(url_for('portfolio.index'))
 
 def send_mail(name, email, message):
-    mi_email = 'alexanderkevindiaz05@gamil.com'
+    mi_email = 'alexanderkevindiaz05@gmail.com'
     sg = sendgrid.SendGridAPIClient(api_key=current_app.config['SENDGRID_KEY'])
 
     from_email = Email(mi_email)
@@ -43,4 +43,5 @@ def send_mail(name, email, message):
     """
 
     mail = Mail(mi_email, to_email, 'Nuevo conctato desde la web', html_content=html_content)
+    #response = sg.client.mail.send.post(request_body=mail.get())
     response = sg.client.mail.send.post(request_body=mail.get())
